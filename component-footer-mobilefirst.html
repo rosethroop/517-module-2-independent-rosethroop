@@ -4,19 +4,17 @@
     <style type="text/css">
 
 /* Mobile-first properties for screens from 0 to 599 pixels*/
-    table {width: 100% !important; height: auto !important;}
+    table {width: 100%; height: auto}
     body {background-color:green;}
 
  
 /* Properties are added for larger screens */
 @media and (min-width: 600px) {
-  table {width: 60%;}
+    table {width: 60%; !important; height: auto !important;}
     body {background-color:red;}
     /* This class overrides the mobile-first rule for tables */
     .footertable {width: 141px; !important; height: auto !important;}  
     }
-
-
 
     </style>
   </head>
