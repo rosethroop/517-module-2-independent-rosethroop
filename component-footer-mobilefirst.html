@@ -14,7 +14,10 @@ table, th, td {
     margin: 0px;
     }
     #container {
-    width: 100%; height: auto;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+    height: auto;
     }
   }
  
@@ -24,15 +27,19 @@ table, th, td {
     body {
     background-color:#ffcc33;
     margin: 0px;}
-    
-    #container {width: 70% !important;}
+    /* This class adjusts the width of the desktop container table */
+    #container {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto; 
+    height: auto;}
     /* This class overrides the mobile-first rule for tables */
-    #footer {width: 141px !important; height: auto;}  
+    #footer {width: 141px !important; margin: auto !important; height: auto;}  
     } 
     </style>
   </head>
   <body>
-    <table id="container" align="center" border="0" cellpadding="0" cellspacing="0">
+    <table id="container" cellpadding="0" cellspacing="0">
       <tbody>
         <tr>
           <td>
@@ -49,16 +56,13 @@ table, th, td {
             <table id="footer" style="margin: auto;" cellpadding="0" cellspacing="0" role="presentation">
               <tbody>
                 <tr>
-                  <td style="padding:0; width:29px; text-align: center;" valign="bottom" width="29"><a href="https://www.facebook.com/sunyoswego"><img alt="SUNY Oswego Facebook" border="0" src="https://apply.oswego.edu/www/images/e-SUNY-Facebook.png" width="29px" /></a></td>
-                  <td style="padding:0; width:38px; text-align: center;" valign="bottom"><a href="https://www.instagram.com/sunyoswego"><img alt="SUNY Oswego Instagram" border="0" src="https://apply.oswego.edu/www/images/e-SUNY-Instagram.png" width="38px" /></a></td>
-                  <td style="padding:0; width:35px; text-align: center;" valign="bottom"><a href="https://www.twitter.com/sunyoswego"><img alt="SUNY Oswego Twitter" border="0" src="https://apply.oswego.edu/www/images/e-SUNY-Twitter.png" width="35px" /></a></td>
-                  <td style="padding:0; width:39px; text-align: center;" valign="bottom"><a href="https://www.youtube.com/user/sunyoswegovideo"><img alt="SUNY Oswego YouTube" border="0" src="https://apply.oswego.edu/www/images/e-SUNY-YouTube.png" width="39px" /></a></td>
+                  <td style="padding:0; width:29px; text-align: center;" valign="bottom" width="29"><a href="https://www.facebook.com/sunyoswego"><img alt="SUNY Oswego Facebook" style="border: 0px solid;" src="https://apply.oswego.edu/www/images/e-SUNY-Facebook.png" width="29px" /></a></td>
+                  <td style="padding:0; width:38px; text-align: center;" valign="bottom"><a href="https://www.instagram.com/sunyoswego"><img alt="SUNY Oswego Instagram" style="border: 0px solid;" src="https://apply.oswego.edu/www/images/e-SUNY-Instagram.png" width="38px" /></a></td>
+                  <td style="padding:0; width:35px; text-align: center;" valign="bottom"><a href="https://www.twitter.com/sunyoswego"><img alt="SUNY Oswego Twitter" style="border: 0px solid;" src="https://apply.oswego.edu/www/images/e-SUNY-Twitter.png" width="35px" /></a></td>
+                  <td style="padding:0; width:39px; text-align: center;" valign="bottom"><a href="https://www.youtube.com/user/sunyoswegovideo"><img alt="SUNY Oswego YouTube" style="border: 0px solid;" src="https://apply.oswego.edu/www/images/e-SUNY-YouTube.png" width="39px" /></a></td>
                 </tr>
               </tbody>
             </table>
-
-            <p>
-            </p>
 
             <p style="text-decoration:none; color:#f2f2f2; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">
               © 2022 SUNY Oswego
