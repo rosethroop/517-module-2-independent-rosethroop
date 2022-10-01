@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An email from SUNY Oswego</title>
     <style type="text/css">
+
 /* Properties for all screens */
 body {
     background-color:#f2f2f2;
@@ -23,11 +24,11 @@ table, th, td {
     border-collapse: collapse;
     }
 
-    /* This id adjusts the width of the mobile container table */
-    #container {
+    /* container class adjusts the width of the mobile container table */
+    .container {
     width: 100% !important;
     height: auto;
-    /* This centers the container table */
+    /* Centers the container table */
     margin-left: auto !important;
     margin-right: auto !important; 
     }
@@ -35,8 +36,8 @@ table, th, td {
  
 /* Properties are added for larger screens */
 @media only screen and (min-width: 600px) {
-    /* This id adjusts the width of the desktop container table */
-    #container {
+    /* container class adjusts the width of the desktop container table */
+    .container {
     width: 70% !important;
     height: auto; !important;
     /* This centers the container table */
@@ -48,7 +49,7 @@ table, th, td {
     </style>
   </head>
   <body>
-    <table id="container" style="padding:0; border-spacing:0;">
+    <table class="container" style="padding:0; border-spacing:0;">
       <tbody>
         <tr>
           <td>
