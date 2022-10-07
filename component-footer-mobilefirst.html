@@ -15,7 +15,10 @@ body {
 /* deliver_unsubscribe class is a slate platform class that turns off the unsubscribe footer */
 .deliver_unsubscribe { 
       display: none!}  
+      
 
+/* Mobile-first properties for screens from 0 to 599 pixels*/
+@media only screen and (max-width: 599px) {    
 table, th, td {
     border: 0px solid;
     border-collapse: collapse;
@@ -26,15 +29,21 @@ table, th, td {
     width: 100% !important;
     height: auto;
     /* Centers the container table */
-    margin-left: auto
-    margin-right: auto
+    margin-left: auto !important;
+    margin-right: auto !important; 
     }
-      
+  }
+ 
 /* Properties are added for larger screens */
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     /* container class adjusts the width of the desktop container table */
     .container {
     width: 70%;
+    height: auto;
+    /* This centers the container table */
+    margin-left: auto;
+    margin-right: auto;
+    }
   } 
 
     </style>
