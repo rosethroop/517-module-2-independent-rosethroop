@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
  <head>
   <meta charset="UTF-8">
@@ -12,29 +11,27 @@ body {
     background-color:#f2f2f2;
     margin: 0px;
     }
-/* deliver_unsubscribe class is a slate platform class that turns off the unsubscribe footer */
-.deliver_unsubscribe { 
-      display: none!}  
-      
 
-/* Mobile-first properties for screens from 0 to 599 pixels*/
-@media screen and (max-width: 599px) {    
 table, th, td {
     border: 0px solid;
     border-collapse: collapse;
     }
 
-    /* container class adjusts the width of the mobile container table */
-    .container {
-    width: 100%
+/* container class adjusts the width of the mobile container table — this is basically the mobile first bit*/
+.container {
+    width: 100%;
     height: auto;
     /* Centers the container table */
-    margin-left: auto
-    margin-right: auto
+    margin-left: auto;
+    margin-right: auto;
     }
-  }
+
+/* deliver_unsubscribe class is a slate platform class that turns off the unsubscribe footer */
+.deliver_unsubscribe { 
+      display: none!}  
+      
  
-/* Properties are added for larger screens */
+/* Properties are added for larger screens*/
 @media screen and (min-width: 600px) {
     /* container class adjusts the width of the desktop container table */
     .container {
