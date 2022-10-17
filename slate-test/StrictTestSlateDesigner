@@ -5,9 +5,12 @@
 <base target="_blank" />
 </head>
 <body data-modern="1">
-<style>body { margin: 0; padding: 0; } </style>
+<style>body { background: #ffcc22; margin: 0; padding: 0; } table, th, td {
+  border: 10px solid;
+}</style>
 
-<table id="container" cellspacing="0" cellpadding="0" width="100%" style="margin: auto; ">
+<table id="container" cellspacing="0" cellpadding="0" width="600px" style="margin: auto; background: #33333;">
+    
 <colgroup>
 <col style="width: 8.33%;" />
 <col style="width: 8.33%;" />
@@ -22,17 +25,41 @@
 <col style="width: 8.33%;" />
 <col style="width: 8.33%;" />
 </colgroup>
+
 <tbody>
-<tr><td colspan="12" style="vertical-align: top;"><div>Row 1.</div></td></tr>
-<tr><td colspan="12" style="vertical-align:top;"><div>Row 2.</div></td></tr>
-<tr><td colspan="12" style="vertical-align: top;"><div>Row 3.</div></td></tr>
-<tr><td colspan="12" style="vertical-align: top;"><div>Row 4.</div></td></tr>
+    <tr>
+        <td colspan="12" style="vertical-align: top;">
+            
+            <div>Row 1. A nested table<br />
+            <table align="center" border="1" cellpadding="1" cellspacing="1" class="row1tableclass" dir="ltr" id="row1table" style="width=:500px;" summary="A table summary"><caption>A table caption</caption>
+            <thead><tr><th scope="col">Col Head</th><th scope="col">Col Head</th></tr></thead>
+            <tbody><tr><td>Cell 1</td><td>Cell 1</td></tr><tr><td>Cell 1</td><td>Cell 1</td></tr></tbody>
+            </table>
+            </div>
+
+        </td>
+    </tr>
+
+    <tr><td colspan="12" style="vertical-align: top;"><div>Row 2.</div></td></tr>
+    <tr><td colspan="12" style="vertical-align: top;"><div>Row 3.</div></td></tr>
+    <tr><td colspan="12" style="vertical-align: top;"><div>Row 4.</div></td></tr>
+    <tr><td colspan="6" style="vertical-align: top;"><div>Row 5.1</div></td>
+        <td colspan="6" style="vertical-align: top;"><div>Row 5.2</div></td></tr>
+    <tr><td colspan="3" style="vertical-align: top;"><div>Row 6.1</div></td>
+        <td colspan="6" style="vertical-align: top;"><div>Row 6.2 (3-col with sidebars)</div></td>
+        <td colspan="3" style="vertical-align: top;"><div>Row 6.3</div></td></tr>
+    <tr><td colspan="4" style="vertical-align: top;"><div>Row 7.1</div></td>
+        <td colspan="4" style="vertical-align: top;"><div>Row 7.2 (3 even columns)</div></td>
+        <td colspan="4" style="vertical-align: top;"><div>Row 7.3</div></td></tr>
+    <tr><td colspan="9" style="vertical-align: top;"><div>Row 8.1 Wide</div></td>
+        <td colspan="3" style="vertical-align: top;"><div>Row 8.2 Narrow</div></td></tr>
+    <tr><td colspan="3" style="vertical-align: top;"><div>Row 9.1 Narrow</div></td>
+        <td colspan="9" style="vertical-align: top;"><div>Row 9.2 Wide</div></td></tr>
+    
 </tbody>
 </table>
-
-<div class="deliver_unsubscribe" style="opacity: 0.75; clear: both; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 25px auto; width: auto; max-width: 600px; background-color: #fafafa; text-align: center; padding: 5px;">This email was sent to  by "SUNY Oswego" &lt;admiss@oswego.edu&gt;.<br /><a href="https://mx.technolutions.net/ss/c/VpDhrCrvzj=
-OrNk6AZ3TbHj5o6g9NCNFA4ScBgjrVRIPE_5-P8MQvaJFbY2JBzZkUPndQZm_ZXJ4a7JE_9YtEXin8Wdeo6ybcoBnjfBgKnNEInb-1qfzKX9K3BYhx-ab2/3qd/EU5vXnbJQSmAh07f19y_8A/h0/7R6BYoAa0E8QPvuXwQS0ZYMztU2LeJYMblNSEtWb9fs">Unsubscribe</a> from SUNY Oswego.</div>
-<img src="https://mx.technolutions.net/ss/o/yHCHsZgbT0yLM9hSAJ4AQw/3qd/EU5vXnbJQSmAh07f19y_8A/ho.gif" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0
-!important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+        
+<div class="deliver_unsubscribe" style="opacity: 0.75; clear: both; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 25px auto; width: auto; max-width: 600px; background-color: #fafafa; text-align: center; padding: 5px;">This email was sent to  by "SUNY Oswego" &lt;admiss@oswego.edu&gt;.<br /><a href="https://mx.technolutions.net/ss/c/VpDhrCrvzjOrNk6AZ3TbHj5o6g9NCNFA4ScBgjrVRIPE_5-P8MQvaJFbY2JBzZkUdmqRWTY23xTtv8yvKMJE-fpPiNa6ArGNE2ckgdHWCVPIMJTH5LR40cHto2iSiBb0/3qd/PZzfpqrhSGC0lZ8AZ1xjXQ/h0/ujiIfGLobq--kB3FNPRII0FHJm-nHsjjWj5x4aL1aME">Unsubscribe</a> from SUNY Oswego.</div>
+<img src="https://mx.technolutions.net/ss/o/yHCHsZgbT0yLM9hSAJ4AQw/3qd/PZzfpqrhSGC0lZ8AZ1xjXQ/ho.gif" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
 </body>
 </html>
