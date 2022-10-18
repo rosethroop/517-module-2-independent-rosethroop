@@ -5,9 +5,12 @@
 <base target="_blank" />
 </head>
 <body data-modern="1">
-<style>body { background: #ffcc22; margin: 0; padding: 0; } table, th, td {
+<style>
+body { background: #ffcc22; margin: 0; padding: 0; } 
+table, th, td {
   border: 10px solid;
-}</style>
+}
+</style>
 
 <table id="container" cellspacing="0" cellpadding="0" width="600px" style="margin: auto; background: #33333;">
     
