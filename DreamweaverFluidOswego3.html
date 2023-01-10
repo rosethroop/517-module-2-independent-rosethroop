@@ -1,24 +1,23 @@
-
 <!doctype html>
+<!--https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-and-meta-tags-in-email-head RT.-->
 <html lang="en-us">
 <head>
-<!--https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-and-meta-tags-in-email-head-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- utf-8 works for most cases. Slate will convert escape characters and convert the charset to ASCII on the first paste-->
+<!--utf-8 works for most cases. Slate will convert escape characters and convert the charset to ASCII on the first paste RT.-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Forcing initial-scale shouldn't be necessary -->
+<!--Forcing initial-scale shouldn't be necessary DW-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Use the latest (edge) version of IE rendering engine -->
-<title>Oswego Email Template-Fluid</title>
-<!-- The title tag shows in email notifications, like Android 4.4. -->
+<!--Use the latest (edge) version of IE rendering engine DW-->
+<title>Oswego Email Template-Fluid.</title>
+<!--The title tag shows in email notifications, like Android 4.4 DW. Titles also show up as H1s in some screen readers RT.-->
 
-<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
-<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+<!--Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients DW/RT.-->
+<!--important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered DW.-->
 
-<!-- CSS Reset -->
+<!--CSS Reset DW.-->
 <style type="text/css">
-/* What it does: Remove spaces around the email design added by some email clients. */
-      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+/* What it does: Removes spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
 html, body {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -67,7 +66,7 @@ a[x-apple-data-detectors] {
 }
 </style>
 
-<!-- Oswego Styles -->
+<!--Oswego Styles-->
 <style type="text/css">
 /* unvisited link */
 a:link {
@@ -87,7 +86,7 @@ a:active {
 }
 </style>
 
-<!-- Progressive Enhancements -->
+<!--Progressive Enhancements-->
 <style type="text/css">
 /* What it does: Hover styles for buttons */
 .button-td, .button-a {
@@ -96,11 +95,12 @@ a:active {
 .button-td:hover, .button-a:hover {
 	background: #1d4b2e !important;
 	border-color: #1d4b2e !important;
-/* What it does: Oswego style added for button drop shadow APPLE YES but GMAIL NO */
+/* What it does: Oswego style added for button drop shadow works for Apple but not Gmail */
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
 }
 </style>
 </head>
+
 <body width="100%" height="100%" bgcolor="#e0e0e0" style="margin: 0;" yahoo="yahoo">
 <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#e0e0e0" style="border-collapse:collapse;" role="presentation">
   <tr>
@@ -121,28 +121,28 @@ a:active {
           <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" role="presentation">
             <tr>
               <td style="padding: 10px 0; text-align: center; background-color: #235937"> <a href="https://www.oswego.edu" target="_blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">
-                <img align="center" border="0" src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" alt="State University of New York at Oswego" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 30%;max-width: 144px;" width="144">
+                <img align="center" border="0" src="https://applys.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" alt="State University of New York at Oswego" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 30%;max-width: 144px;" width="144">
               </a></td>
             </tr>
           </table>
-            
-            
           <!-- Email Header : END --> 
           
           <!-- Email Body : BEGIN -->
           <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f2f2f2" width="100%" style="max-width: 600px;" role="presentation">
             
             <!-- Hero Image, Flush : BEGIN -->
+             <!-- Customize the alt text and link on the Hero Image to include text or descriptive narrative. If it is purely decorative. Leave it blank. RT --> 
             <tr>
-              <td class="full-width-image" align="center" ><img src="https://via.placeholder.com/600x300.jpg" width="600" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto;"></td>
+              <td class="full-width-image" align="center"><a href="https://www.youtube.com" target="_blank" style="text-decoration:none; color: #235937 !important; font-size:.75rem; line-height:1.25 rem; font-family:Arial,Helvetica,sans-serif;"><img src="https://via.placeholder.com/600x300.jpg" width="600" alt="Customize Hero Alt Text" border="0" style="width: 100%; max-width: 600px; height: auto;"></a></td>
             </tr>
-            <!-- Hero Image, Flush : END --> 
+            <!-- Hero Image, Flush : END -->
+           
             
             <!-- 1 Column Text : BEGIN -->
             <tr>
               <td><table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
                   <tr>
-                    <td style="padding: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333;"> Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat. <br>
+                    <td style="padding: 40px; font-family: Arial, Helvetica, sans-serif; font-size: .75rem; mso-height-rule: exactly; line-height: 1.25rem; color: #333333;"> Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat. <br>
                       <br>
                       
                       <!-- Button : Begin -->
@@ -162,7 +162,7 @@ a:active {
                   </tr>
                 </table></td>
             </tr>
-            <!-- 1 Column Text : BEGIN (original template item...should this be END? RT) --> 
+            <!-- 1 Column Text : END --> 
             
             <!-- Two Even Columns : BEGIN -->
             <tr>
@@ -181,14 +181,14 @@ a:active {
                     <![endif]-->
                       
                       <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
                           <tr>
-                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;" role="presentation">
                                 <tr>
-                                  <td style="text-align: center;"><img src="https://via.placeholder.com/200x200.jpg" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                  <td style="text-align: center;"><img src="https://via.placeholderNO.com/200x200.jpg" width="200" alt="Customize Left Alt Text" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
                                 </tr>
                                 <tr>
-                                  <td style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; padding-top: 10px;" class="stack-column-center"> Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </td>
+                                  <td style="font-family: Arial, Helvetica, sans-serif; font-size: .75rem; mso-height-rule: exactly; line-height: 1.25rem; color: #333333; padding-top: 10px;" class="stack-column-center">Left 2-Column Text. Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -203,12 +203,12 @@ a:active {
                       <div style="display:inline-block; max-width:50%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
                         <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
                           <tr>
-                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;" role="presentation">
                                 <tr>
-                                  <td style="text-align: center;"><img src="https://via.placeholder.com/200x200.jpg" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
+                                  <td style="text-align: center;"><img src="https://via.placeholderNO.com/200x200.jpg" width="200" alt="Customize Right Alt Text" style="border: 0;width: 100%;max-width: 200px;height: auto;" class="center-on-narrow"></td>
                                 </tr>
                                 <tr>
-                                  <td style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; padding-top: 10px;" class="stack-column-center"> Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </td>
+                                  <td style="font-family: Arial, Helvetica, sans-serif; font-size: .75rem; mso-height-rule: exactly; line-height: 1.25rem; color: #333333; padding-top: 10px;" class="stack-column-center">Right 2-Column Text. Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </td>
                                 </tr>
                               </table></td>
                           </tr>
@@ -241,27 +241,29 @@ a:active {
           <td>
           <div style="text-align:center;padding:10px;background-color:#333333 ;">
             <p style="text-decoration:none; color:#f2f2f2; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">
-              <a href="https://www.oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="SUNY Oswego" src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" style="margin-bottom:10px; width:190px;"></a><br>
+              <a href="https://www.oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="SUNY Oswego" src="https://applys.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" style="margin-bottom:10px; width:190px;"></a><br>
               Office of Admissions<br>
               229 Sheldon Hall<br>
               Oswego, New York 13126-3599<br>
               <br>
               <a href="tel:+13153122250" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">315.312.2250</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:admiss@oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">admiss@oswego.edu</a>
             </p>
-
+            <!-- Social Table : Begin --> 
             <table id="social" style="width: 200px; border: 0px solid; margin: auto; padding:0; border-spacing: 0;" role="presentation" aria-label="social media buttons">
               <tbody>
                 <tr>
-                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.facebook.com/sunyoswego" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="Facebook" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/facebook.png"></a></td>
+                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.facebook.com/sunyoswego" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.5rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="Facebook" style="width:42px; border: 0px solid;" src="https://applys.oswego.edu/www/images/undergraduate/facebook.png"></a></td>
                   
-                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.instagram.com/sunyoswego" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="Insta" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/instagram.png"></a></td>
+                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.instagram.com/sunyoswego" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.5rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="Instagram" style="width:42px; border: 0px solid;" src="https://applys.oswego.edu/www/images/undergraduate/instagram.png"></a></td>
                  
-                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.twitter.com/sunyoswego" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="Twitter" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/twitter.png"></a></td>
+                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.twitter.com/sunyoswego" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.5rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="Twitter" style="width:42px; border: 0px solid;" src="https://applys.oswego.edu/www/images/undergraduate/twitter.png"></a></td>
                  
-                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.youtube.com/sunyoswegovideo" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="YouTube" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/youtube.png"></a></td>
+                  <td style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.youtube.com/sunyoswegovideo" target="blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.5rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;"><img alt="YouTube" style="width:42px; border: 0px solid;" src="https://applys.oswego.edu/www/images/undergraduate/youtube.png"></a></td>
                 </tr>
               </tbody>
-          </table>
+             </table>
+            <!-- Social Table : END --> 
+        </table>
           <!-- Email Footer : END --> 
           
           <!--[if (gte mso 9)|(IE)]>
@@ -273,5 +275,6 @@ a:active {
       </center></td>
   </tr>
 </table>
+<!--Container : END-->
 </body>
 </html>
