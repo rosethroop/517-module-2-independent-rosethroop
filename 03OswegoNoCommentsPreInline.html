@@ -1,48 +1,31 @@
 <!doctype html>
-<!--https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-and-meta-tags-in-email-head RT.-->
 <html lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!--utf-8 works for most cases. Slate will convert escape characters and convert the charset to ASCII on the first paste RT.-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Forcing initial-scale shouldn't be necessary DW-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--Use the latest (edge) version of IE rendering engine DW-->
 <title>Oswego Email Template-Fluid</title>
-<!--The title tag shows in email notifications, like Android 4.4 DW. Titles also show up as H1s in some screen readers RT.-->
-
-<!--Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients DW/RT.-->
-<!--important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered DW.-->
-
-<!--CSS Reset DW.-->
 <style type="text/css">
-/* What it does: Removes spaces around the email design added by some email clients. */
-/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
 html, body {
 	margin: 0 !important;
 	padding: 0 !important;
 	height: 100% !important;
 	width: 100% !important;
 }
-/* What it does: Stops email clients resizing small text. */
 * {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-/* What it does: Forces Outlook.com to display emails full width. */
 .ExternalClass {
 	width: 100%;
 }
-/* What is does: Centers email on Android 4.4 */
 div[style*="margin: 16px 0"] {
 	margin: 0 !important;
 }
-/* What it does: Stops Outlook from adding extra spacing to tables. */
 table, td {
 	mso-table-lspace: 0pt !important;
 	mso-table-rspace: 0pt !important;
 }
-/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
 table {
 	border-spacing: 0 !important;
 	border-collapse: collapse !important;
@@ -52,50 +35,39 @@ table {
 table table table {
 	table-layout: auto;
 }
-/* What it does: Uses a better rendering method when resizing images in IE. */
 img {
 	-ms-interpolation-mode: bicubic;
 }
-/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
 .yshortcuts a {
 	border-bottom: none !important;
 }
-/* What it does: Another work-around for iOS meddling in triggered links. */
 a[x-apple-data-detectors] {
 	color: inherit !important;
 }
 </style>
 
-<!--Oswego Styles-->
 <style type="text/css">
-/* unvisited link */
 a:link {
   color: #235936 !important;
 }
-/* visited link */
 a:visited {
   color: #235937 !important;
 }
-/* mouse over link */
 a:hover {
   color:#153420 !important;
 }
-/* selected link */
 a:active {
   color: #ffcc22 !important;
 }
 </style>
 
-<!--Progressive Enhancements-->
 <style type="text/css">
-/* What it does: Hover styles for buttons */
 .button-td, .button-a {
 	transition: all 100ms ease-in;
 }
 .button-td:hover, .button-a:hover {
 	background: #1d4b2e !important;
 	border-color: #1d4b2e !important;
-/* What it does: Oswego style added for button drop shadow works for Apple but not Gmail */
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
 }
 </style>
@@ -106,9 +78,7 @@ a:active {
   <tr>
     <td><center style="width: 100%;">
         
-        <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: Arial, Helvetica, sans-serif;">Oswego here,...<!--(Optional) This text will appear in the inbox preview, but not the email body.--> </div>
-        <!-- Visually Hidden Preheader Text : END -->
         
         <div style="max-width: 600px;"> 
           <!--[if (gte mso 9)|(IE)]>
@@ -117,34 +87,26 @@ a:active {
             <td>
             <![endif]--> 
           
-          <!-- Email Header : BEGIN -->
           <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" role="presentation">
             <tr>
               <td style="padding: 10px 0; text-align: center; background-color: #235937"><a href="https://www.oswego.edu" target="_blank" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">
                 <img align="center" border="0" src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" alt="State University of New York at Oswego" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 30%;max-width: 144px;" width="144"></a></td>
             </tr>
           </table>
-          <!-- Email Header : END --> 
-          
-          <!-- Email Body : BEGIN -->
+ 
           <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f2f2f2" width="100%" style="max-width: 600px;" role="presentation">
             
-            <!-- Hero Image, Flush : BEGIN -->
-             <!-- Customize the alt text and link on the Hero Image to include text or descriptive narrative. If it is purely decorative. Leave it blank. RT --> 
             <tr>
               <td class="full-width-image" align="center"><a href="https://www.youtube.com" target="_blank" style="text-decoration:none; color: #235937 !important; font-size:.75rem; line-height:1.25 rem; font-family:Arial,Helvetica,sans-serif;"><img src="https://via.placeholder.com/600x300.jpg" width="600" alt="Customize Hero Alt Text" border="0" style="width: 100%; max-width: 600px; height: auto;" align="absbottom"></a></td>
             </tr>
-            <!-- Hero Image, Flush : END -->
-           
-            
-            <!-- 1 Column Text : BEGIN -->
+
             <tr>
               <td><table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation">
                   <tr>
                     <td style="padding: 40px; font-family: Arial, Helvetica, sans-serif; font-size: .75rem; mso-height-rule: exactly; line-height: 1.25rem; color: #333333;">Text Above the Button. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
                       <br>
                       
-                      <!-- Button : Begin -->
+                     
                       
                       <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;" role="presentation">
                         <tr>
@@ -154,16 +116,14 @@ a:active {
                         </tr>
                       </table>
                       
-                      <!-- Button : END --> 
+                     
                       
                       <br>
                      Text below the button. Ut enim ad minim veniam, quis nostrud exercitation <a href="https://www.oswego.edu">ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
                   </tr>
                 </table></td>
             </tr>
-            <!-- 1 Column Text : END --> 
-            
-            <!-- Two Even Columns : BEGIN -->
+ 
             <tr>
               <td bgcolor="#f2f2f2" align="center" height="100%" valign="top" width="100%"><!--[if mso]>
                         <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
@@ -228,12 +188,9 @@ a:active {
                         </table>
                         <![endif]--></td>
             </tr>
-            <!-- Two Even Columns : END -->
             
           </table>
-          <!-- Email Body : END --> 
-          
-          <!-- Email Footer : BEGIN -->
+
           <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;" role="presentation">
  <tbody>
         <tr>
@@ -247,7 +204,7 @@ a:active {
               <br>
               <a href="tel:+13153122250" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">315.312.2250</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:admiss@oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25; font-family:Arial,Helvetica,sans-serif;">admiss@oswego.edu</a>
             </p>
-            <!-- Social Table : Begin --> 
+            
             <table id="social" style="width: 200px; border: 0px solid; margin: auto; padding:0; border-spacing: 0;" role="presentation" aria-label="social media buttons">
               <tbody>
                 <tr>
@@ -261,10 +218,10 @@ a:active {
                 </tr>
               </tbody>
              </table>
-            <!-- Social Table : END --> 
+            
         </table></td>
             </tr>
-          <!-- Email Footer : END --> 
+        
           
           <!--[if (gte mso 9)|(IE)]>
             </td>
@@ -275,6 +232,5 @@ a:active {
       </center></td>
   </tr>
 </table>
-<!--Container : END-->
 </body>
 </html>
